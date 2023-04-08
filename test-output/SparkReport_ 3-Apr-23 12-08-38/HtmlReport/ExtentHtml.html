@@ -1,0 +1,1235 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href='http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title></title>
+
+	<style type='text/css'>
+		/* json-tree */
+		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+			
+	</style>
+	
+	<script type="text/javascript">
+		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
+		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
+	</script>
+</head>
+	<body class='extent standard default hide-overflow bdd-report'>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+<nav>
+	<div class="nav-wrapper">
+        <a href="#!" class="brand-logo black"><img src="http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/commons/img/logo.png"></a>
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+		</ul>
+		<!-- report name -->
+		<span class='report-name'></span>
+		<!-- report headline -->
+		<span class='report-headline'></span>
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a href='#!'>
+			<span class='label blue darken-3 suite-start-time'>Apr 3, 2023 12:08:37 PM</span>
+			</a>
+		</ul>
+	</div>
+</nav>		<!-- container -->
+		<div class='container'>
+<div id='test-view' class='view'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+			<!-- category toggle -->
+			<!-- category toggle -->
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+				<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+				<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+<div id='test-view-charts' class='subview-full'>
+    <div id='charts-row' class='row nm-v nm-h'>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Features</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='parent-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
+                    <span class='strong'>3</span> features passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped
+                </div>
+            </div>
+        </div>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Scenarios</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='child-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>37</span> scenarios passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> others
+                </div>
+            </div>
+        </div>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Steps</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='grandchild-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>124</span> steps passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> others
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="timeline-chart" class="row nm-v nm-h">
+        <div class="col s12 m12 l12 np-h">
+            <div class="card-panel">
+                <div class='left panel-name'>Timeline (seconds)</div>
+                <div class="chart-box" style="width:98%;max-height:145px;">
+                    <canvas id="timeline" height="120"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='test-collection' class='test-collection'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Launch ds-algo portal and navigate to home page</span>
+						<span class='test-time'>Apr 3, 2023 12:08:44 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='2' status='pass'>
+
+	<span class='duration right label'>00 00 02.892</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: User launch home page of an dsalgo project</div>
+	</div>
+	
+	
+	
+	<ul class='steps'>
+		<li test-id='3' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.homepage.the_user_opens_ds_algo_portal_link())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given The user opens DS Algo portal link</div>
+
+
+		</li>
+		<li test-id='4' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.homepage.the_user_clicks_the_button(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user clicks the "Get Started" button</div>
+
+
+		</li>
+		<li test-id='5' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.homepage.the_user_should_be_redirected_to_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The user should be redirected to homepage</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='6' status='pass'>
+
+	<span class='duration right label'>00 00 04.056</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: User is on Home page and click on dropdown without sign in</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>value</td></tr><tr><td>Arrays</td></tr><tr><td>Linkedlist</td></tr><tr><td>Stack</td></tr><tr><td>Queue</td></tr><tr><td>Tree</td></tr><tr><td>Graph</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='7' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User is on Home page and click on dropdown without sign in</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='8' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_is_on_home_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given The user is on Home page</h6>
+
+				</li>
+				<li test-id='9' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_clicks_on_datastructure_dropdown_without_signin()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user clicks on datastructure dropdown without signin</h6>
+
+				</li>
+				<li test-id='10' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_clicks_on_any_dropdown(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The user clicks on any dropdown "Arrays"</h6>
+
+				</li>
+				<li test-id='11' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_get_warning_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The user get warning message "You are not logged in"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='12' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User is on Home page and click on dropdown without sign in</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='13' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_is_on_home_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given The user is on Home page</h6>
+
+				</li>
+				<li test-id='14' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_clicks_on_datastructure_dropdown_without_signin()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user clicks on datastructure dropdown without signin</h6>
+
+				</li>
+				<li test-id='15' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_clicks_on_any_dropdown(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The user clicks on any dropdown "Linkedlist"</h6>
+
+				</li>
+				<li test-id='16' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_get_warning_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The user get warning message "You are not logged in"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='17' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User is on Home page and click on dropdown without sign in</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='18' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_is_on_home_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given The user is on Home page</h6>
+
+				</li>
+				<li test-id='19' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_clicks_on_datastructure_dropdown_without_signin()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user clicks on datastructure dropdown without signin</h6>
+
+				</li>
+				<li test-id='20' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_clicks_on_any_dropdown(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The user clicks on any dropdown "Stack"</h6>
+
+				</li>
+				<li test-id='21' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_get_warning_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The user get warning message "You are not logged in"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='22' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User is on Home page and click on dropdown without sign in</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='23' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_is_on_home_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given The user is on Home page</h6>
+
+				</li>
+				<li test-id='24' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_clicks_on_datastructure_dropdown_without_signin()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user clicks on datastructure dropdown without signin</h6>
+
+				</li>
+				<li test-id='25' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_clicks_on_any_dropdown(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The user clicks on any dropdown "Queue"</h6>
+
+				</li>
+				<li test-id='26' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_get_warning_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The user get warning message "You are not logged in"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='27' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User is on Home page and click on dropdown without sign in</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='28' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_is_on_home_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given The user is on Home page</h6>
+
+				</li>
+				<li test-id='29' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_clicks_on_datastructure_dropdown_without_signin()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user clicks on datastructure dropdown without signin</h6>
+
+				</li>
+				<li test-id='30' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_clicks_on_any_dropdown(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The user clicks on any dropdown "Tree"</h6>
+
+				</li>
+				<li test-id='31' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_get_warning_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The user get warning message "You are not logged in"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='32' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User is on Home page and click on dropdown without sign in</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='33' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_is_on_home_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given The user is on Home page</h6>
+
+				</li>
+				<li test-id='34' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_clicks_on_datastructure_dropdown_without_signin()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user clicks on datastructure dropdown without signin</h6>
+
+				</li>
+				<li test-id='35' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_clicks_on_any_dropdown(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The user clicks on any dropdown "Graph"</h6>
+
+				</li>
+				<li test-id='36' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_get_warning_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The user get warning message "You are not logged in"</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='37' status='pass'>
+
+	<span class='duration right label'>00 00 04.573</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: User is on Home page and click getstarted link on  home page without sign in</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>value</td></tr><tr><td>Datastructures</td></tr><tr><td>Arrays</td></tr><tr><td>Linkedlist</td></tr><tr><td>Stack</td></tr><tr><td>Queue</td></tr><tr><td>Tree</td></tr><tr><td>Graph</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='38' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User is on Home page and click getstarted link on  home page without sign in</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='39' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_is_on_home_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given The user is on Home page</h6>
+
+				</li>
+				<li test-id='40' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_clicks_on_any_get_started_link_arrays_on_homepage_without_signin(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user clicks on any Get Started link "Datastructures" on homepage  without signin</h6>
+
+				</li>
+				<li test-id='41' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_get_warning_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The user get warning message "You are not logged in"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='42' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User is on Home page and click getstarted link on  home page without sign in</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='43' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_is_on_home_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given The user is on Home page</h6>
+
+				</li>
+				<li test-id='44' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_clicks_on_any_get_started_link_arrays_on_homepage_without_signin(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user clicks on any Get Started link "Arrays" on homepage  without signin</h6>
+
+				</li>
+				<li test-id='45' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_get_warning_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The user get warning message "You are not logged in"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='46' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User is on Home page and click getstarted link on  home page without sign in</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='47' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_is_on_home_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given The user is on Home page</h6>
+
+				</li>
+				<li test-id='48' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_clicks_on_any_get_started_link_arrays_on_homepage_without_signin(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user clicks on any Get Started link "Linkedlist" on homepage  without signin</h6>
+
+				</li>
+				<li test-id='49' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_get_warning_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The user get warning message "You are not logged in"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='50' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User is on Home page and click getstarted link on  home page without sign in</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='51' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_is_on_home_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given The user is on Home page</h6>
+
+				</li>
+				<li test-id='52' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_clicks_on_any_get_started_link_arrays_on_homepage_without_signin(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user clicks on any Get Started link "Stack" on homepage  without signin</h6>
+
+				</li>
+				<li test-id='53' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_get_warning_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The user get warning message "You are not logged in"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='54' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User is on Home page and click getstarted link on  home page without sign in</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='55' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_is_on_home_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given The user is on Home page</h6>
+
+				</li>
+				<li test-id='56' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_clicks_on_any_get_started_link_arrays_on_homepage_without_signin(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user clicks on any Get Started link "Queue" on homepage  without signin</h6>
+
+				</li>
+				<li test-id='57' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_get_warning_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The user get warning message "You are not logged in"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='58' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User is on Home page and click getstarted link on  home page without sign in</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='59' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_is_on_home_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given The user is on Home page</h6>
+
+				</li>
+				<li test-id='60' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_clicks_on_any_get_started_link_arrays_on_homepage_without_signin(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user clicks on any Get Started link "Tree" on homepage  without signin</h6>
+
+				</li>
+				<li test-id='61' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_get_warning_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The user get warning message "You are not logged in"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='62' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User is on Home page and click getstarted link on  home page without sign in</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='63' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_is_on_home_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given The user is on Home page</h6>
+
+				</li>
+				<li test-id='64' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_clicks_on_any_get_started_link_arrays_on_homepage_without_signin(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user clicks on any Get Started link "Graph" on homepage  without signin</h6>
+
+				</li>
+				<li test-id='65' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.homepage.the_user_get_warning_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The user get warning message "You are not logged in"</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='66' status='pass'>
+
+	<span class='duration right label'>00 00 00.455</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: User is on Home page and click on sign in</div>
+	</div>
+	
+	
+	
+	<ul class='steps'>
+		<li test-id='67' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.homepage.the_user_is_on_home_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given The user is on Home page</div>
+
+
+		</li>
+		<li test-id='68' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.homepage.the_user_clicks_on_signin_link())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user clicks on Signin link</div>
+
+
+		</li>
+		<li test-id='69' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.homepage.the_user_should_be_redirected_to_sign_in_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The user should be redirected to Sign in page</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='70' status='pass'>
+
+	<span class='duration right label'>00 00 00.476</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: User is on Home page and click on Register</div>
+	</div>
+	
+	
+	
+	<ul class='steps'>
+		<li test-id='71' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.homepage.the_user_is_on_home_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given The user is on Home page</div>
+
+
+		</li>
+		<li test-id='72' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.homepage.the_user_clicks_on_register_link())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When The user clicks on Register link</div>
+
+
+		</li>
+		<li test-id='73' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.homepage.the_user_should_be_redirected_to_register_form())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The user should be redirected to Register form</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='74'>
+					<div class='test-heading'>
+						<span class='test-name'>To verify and validate Registration Page</span>
+						<span class='test-time'>Apr 3, 2023 12:08:57 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='75' status='pass'>
+
+	<span class='duration right label'>00 00 00.256</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: The user is presented with error message for empty fields below Username textbox</div>
+	</div>
+	
+	
+	
+	<ul class='steps'>
+		<li test-id='76' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.Register_SD.user_opens_register_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens Register Page</div>
+
+
+		</li>
+		<li test-id='77' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.Register_SD.user_clicks_register_button_with_all_fields_empty())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User clicks Register button with all fields empty</div>
+
+
+		</li>
+		<li test-id='78' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.Register_SD.it_should_display_an_error_below_username_textbox(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then It should display an error "Please fill out this field." below Username textbox</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='79' status='pass'>
+
+	<span class='duration right label'>00 00 00.409</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: The user is presented with error message for empty fields below Password textbox</div>
+	</div>
+	
+	
+	
+	<ul class='steps'>
+		<li test-id='80' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.Register_SD.user_opens_register_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens Register Page</div>
+
+
+		</li>
+		<li test-id='81' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.Register_SD.user_clicks_register_button_after_entering_username_as_with_other_fields_empty(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User clicks Register button after entering username as "Numpy@sdet84_1" with other fields empty</div>
+
+
+		</li>
+		<li test-id='82' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.Register_SD.it_should_display_an_error_below_password_textbox(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then It should display an error "Please fill out this field" below Password textbox</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='83' status='pass'>
+
+	<span class='duration right label'>00 00 00.648</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: The user is presented with error message for empty fields below Password Confirmation textbox</div>
+	</div>
+	
+	
+	
+	<ul class='steps'>
+		<li test-id='84' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.Register_SD.user_opens_register_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens Register Page</div>
+
+
+		</li>
+		<li test-id='85' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.Register_SD.user_clicks_register_button_after_entering_and_with_password_confirmation_field_empty(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User clicks Register button after entering "Numpy@sdet84_1" and "testpassword" with Password Confirmation field empty</div>
+
+
+		</li>
+		<li test-id='86' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.Register_SD.it_should_display_an_error_below_password_confirmation_textbox(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then It should display an error "Please fill out this field." below Password Confirmation textbox</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='87' status='pass'>
+
+	<span class='duration right label'>00 00 07.727</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: The user is presented with error message for invalid credentials and successs message for Valid Credentials</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>username</td><td>password</td><td>password_confirmation</td><td>Message</td></tr><tr><td>Numpy</td><td>testpassword</td><td>testpassword</td><td>Please enter a valid username</td></tr><tr><td>Numpy@sdet84_1</td><td>RT56YUabc</td><td>RT56YUabc</td><td>Username already exists</td></tr><tr><td>Numpy@sdet84_1</td><td>testpassword</td><td>testpassword1</td><td>password_mismatch:The two password fields didn’t match.</td></tr><tr><td>Numpy@sdet84_1</td><td>a1b2c3</td><td>a1b2c3</td><td>Password should contain at least 8 characters</td></tr><tr><td>Numpy@sdet84_1</td><td>12345678</td><td>12345678</td><td>Password can’t be entirely numeric.</td></tr><tr><td>Numpy@sdet84_1</td><td>testsdet84</td><td>testsdet84</td><td>password can’t be too similar to your other personal information.</td></tr><tr><td>kalpana_dsalgo@gmail.com</td><td>ninja_32823</td><td>ninja_32823</td><td>New account created</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='88' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>The user is presented with error message for invalid credentials and successs message for Valid Credentials</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='89' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_opens_register_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens Register Page</h6>
+
+				</li>
+				<li test-id='90' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_enters_and(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters "Numpy" ,"testpassword" and "testpassword"</h6>
+
+				</li>
+				<li test-id='91' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_clicks_register_and_validate(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User clicks Register and  validate  "Please enter a valid username"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='92' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>The user is presented with error message for invalid credentials and successs message for Valid Credentials</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='93' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_opens_register_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens Register Page</h6>
+
+				</li>
+				<li test-id='94' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_enters_and(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters "Numpy@sdet84_1" ,"RT56YUabc" and "RT56YUabc"</h6>
+
+				</li>
+				<li test-id='95' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_clicks_register_and_validate(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User clicks Register and  validate  "Username already exists"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='96' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>The user is presented with error message for invalid credentials and successs message for Valid Credentials</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='97' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_opens_register_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens Register Page</h6>
+
+				</li>
+				<li test-id='98' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_enters_and(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters "Numpy@sdet84_1" ,"testpassword" and "testpassword1"</h6>
+
+				</li>
+				<li test-id='99' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_clicks_register_and_validate(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User clicks Register and  validate  "password_mismatch:The two password fields didn’t match."</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='100' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>The user is presented with error message for invalid credentials and successs message for Valid Credentials</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='101' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_opens_register_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens Register Page</h6>
+
+				</li>
+				<li test-id='102' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_enters_and(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters "Numpy@sdet84_1" ,"a1b2c3" and "a1b2c3"</h6>
+
+				</li>
+				<li test-id='103' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_clicks_register_and_validate(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User clicks Register and  validate  "Password should contain at least 8 characters"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='104' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>The user is presented with error message for invalid credentials and successs message for Valid Credentials</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='105' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_opens_register_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens Register Page</h6>
+
+				</li>
+				<li test-id='106' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_enters_and(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters "Numpy@sdet84_1" ,"12345678" and "12345678"</h6>
+
+				</li>
+				<li test-id='107' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_clicks_register_and_validate(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User clicks Register and  validate  "Password can’t be entirely numeric."</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='108' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>The user is presented with error message for invalid credentials and successs message for Valid Credentials</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='109' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_opens_register_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens Register Page</h6>
+
+				</li>
+				<li test-id='110' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_enters_and(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters "Numpy@sdet84_1" ,"testsdet84" and "testsdet84"</h6>
+
+				</li>
+				<li test-id='111' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_clicks_register_and_validate(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User clicks Register and  validate  "password can’t be too similar to your other personal information."</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='112' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>The user is presented with error message for invalid credentials and successs message for Valid Credentials</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='113' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_opens_register_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens Register Page</h6>
+
+				</li>
+				<li test-id='114' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_enters_and(java.lang.String,java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters "kalpana_dsalgo@gmail.com" ,"ninja_32823" and "ninja_32823"</h6>
+
+				</li>
+				<li test-id='115' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_clicks_register_and_validate(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User clicks Register and  validate  "New account created"</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='116' status='pass'>
+
+	<span class='duration right label'>00 00 05.650</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Read data from Excel for Register page and verify Message</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>Sheetname</td><td>Rownum</td></tr><tr><td>Register</td><td>1</td></tr><tr><td>Register</td><td>2</td></tr><tr><td>Register</td><td>3</td></tr><tr><td>Register</td><td>4</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='117' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Read data from Excel for Register page and verify Message</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='118' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_opens_register_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens Register Page</h6>
+
+				</li>
+				<li test-id='119' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_enters_and(java.lang.String,java.lang.Integer)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters "Register" and 1</h6>
+
+				</li>
+				<li test-id='120' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.clicks_on_register_buttton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Clicks on Register buttton</h6>
+
+				</li>
+				<li test-id='121' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.it_should_display_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then It should display Message "Invalid Username and Password"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='122' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Read data from Excel for Register page and verify Message</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='123' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_opens_register_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens Register Page</h6>
+
+				</li>
+				<li test-id='124' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_enters_and(java.lang.String,java.lang.Integer)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters "Register" and 2</h6>
+
+				</li>
+				<li test-id='125' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.clicks_on_register_buttton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Clicks on Register buttton</h6>
+
+				</li>
+				<li test-id='126' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.it_should_display_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then It should display Message "Invalid Username and Password"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='127' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Read data from Excel for Register page and verify Message</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='128' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_opens_register_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens Register Page</h6>
+
+				</li>
+				<li test-id='129' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_enters_and(java.lang.String,java.lang.Integer)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters "Register" and 3</h6>
+
+				</li>
+				<li test-id='130' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.clicks_on_register_buttton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Clicks on Register buttton</h6>
+
+				</li>
+				<li test-id='131' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.it_should_display_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then It should display Message "Invalid Username and Password"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='132' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Read data from Excel for Register page and verify Message</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='133' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_opens_register_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User opens Register Page</h6>
+
+				</li>
+				<li test-id='134' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.user_enters_and(java.lang.String,java.lang.Integer)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters "Register" and 4</h6>
+
+				</li>
+				<li test-id='135' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.clicks_on_register_buttton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Clicks on Register buttton</h6>
+
+				</li>
+				<li test-id='136' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.Register_SD.it_should_display_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then It should display Message "Invalid Username and Password"</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='137'>
+					<div class='test-heading'>
+						<span class='test-name'>Verifying credentials for Sign in Page</span>
+						<span class='test-time'>Apr 3, 2023 12:09:12 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='138' status='pass'>
+
+	<span class='duration right label'>00 00 00.198</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verifying account and redirected to Register page</div>
+	</div>
+	
+	
+	
+	<ul class='steps'>
+		<li test-id='139' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.SignIn_SD.user_is_on_sign_in_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is on SignIn Page</div>
+
+
+		</li>
+		<li test-id='140' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.SignIn_SD.user_clicks_on_register_link())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User Clicks on Register link</div>
+
+
+		</li>
+		<li test-id='141' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.SignIn_SD.user_is_redirected_to_register_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User is redirected to Register Page</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='142' status='pass'>
+
+	<span class='duration right label'>00 00 00.306</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: To Verify SignIn page with empty fields</div>
+	</div>
+	
+	
+	
+	<ul class='steps'>
+		<li test-id='143' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.SignIn_SD.user_is_on_sign_in_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is on SignIn Page</div>
+
+
+		</li>
+		<li test-id='144' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.SignIn_SD.user_clicks_on_login_button_with_all_fields_empty())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User clicks on Login button with all fields empty</div>
+
+
+		</li>
+		<li test-id='145' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.SignIn_SD.user_is_presented_with_errormessage_at_username_as(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User is presented with errormessage at username as "Please fill out the field"</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='146' status='pass'>
+
+	<span class='duration right label'>00 00 00.597</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: To Verify SignIn page with username only.</div>
+	</div>
+	
+	
+	
+	<ul class='steps'>
+		<li test-id='147' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.SignIn_SD.user_is_on_sign_in_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is on SignIn Page</div>
+
+
+		</li>
+		<li test-id='148' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.SignIn_SD.user_enters_username_as_and_clicks_on_login_button(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters username as  "kalpana_77@gmail.com" and Clicks on Login button</div>
+
+
+		</li>
+		<li test-id='149' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.SignIn_SD.user_is_presented_with_errormessage_at_password_as(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User is presented with errormessage at Password as "Please fill out this field"</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='150' status='pass'>
+
+	<span class='duration right label'>00 00 00.462</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: To Verify SignIn page with Password only.</div>
+	</div>
+	
+	
+	
+	<ul class='steps'>
+		<li test-id='151' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.SignIn_SD.user_is_on_sign_in_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is on SignIn Page</div>
+
+
+		</li>
+		<li test-id='152' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.SignIn_SD.user_enters_only_and_clicks_on_login_button(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters "sdet_32823" only and Clicks on Login button</div>
+
+
+		</li>
+		<li test-id='153' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinition.SignIn_SD.user_is_presented_with_error_message(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User is presented with error message "Please fill out this field"</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='154' status='pass'>
+
+	<span class='duration right label'>00 00 03.413</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: To Verify Signin Page with invalid credentials</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>Sirisha</td><td>1344343</td></tr><tr><td>Radha</td><td>rd_0900</td></tr><tr><td>kalpana_77@gmail.com</td><td>sdet_32823</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='155' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>To Verify Signin Page with invalid credentials</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='156' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.SignIn_SD.user_is_on_sign_in_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is on SignIn Page</h6>
+
+				</li>
+				<li test-id='157' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.SignIn_SD.user_enters_and(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters "Sirisha" and "1344343"</h6>
+
+				</li>
+				<li test-id='158' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.SignIn_SD.clicks_on_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Clicks on Login button</h6>
+
+				</li>
+				<li test-id='159' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.SignIn_SD.it_displays_error_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then It displays error message "Invalid Username and Password"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='160' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>To Verify Signin Page with invalid credentials</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='161' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.SignIn_SD.user_is_on_sign_in_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is on SignIn Page</h6>
+
+				</li>
+				<li test-id='162' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.SignIn_SD.user_enters_and(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters "Radha" and "rd_0900"</h6>
+
+				</li>
+				<li test-id='163' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.SignIn_SD.clicks_on_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Clicks on Login button</h6>
+
+				</li>
+				<li test-id='164' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.SignIn_SD.it_displays_error_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then It displays error message "Invalid Username and Password"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='165' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>To Verify Signin Page with invalid credentials</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='166' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.SignIn_SD.user_is_on_sign_in_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is on SignIn Page</h6>
+
+				</li>
+				<li test-id='167' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.SignIn_SD.user_enters_and(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters "kalpana_77@gmail.com" and "sdet_32823"</h6>
+
+				</li>
+				<li test-id='168' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.SignIn_SD.clicks_on_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Clicks on Login button</h6>
+
+				</li>
+				<li test-id='169' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinition.SignIn_SD.it_displays_error_message(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then It displays error message "Invalid Username and Password"</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<!-- subview left -->
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<div id='step-filters' class="right sr-filters">
+				<a class="btn-floating waves-effect waves-light green" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></a>
+				<a class="btn-floating waves-effect waves-light red" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light red darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light pink text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></a>
+				<a class="btn-floating waves-effect waves-light orange" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></a>
+				<a class="btn-floating waves-effect waves-light teal" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></a>
+				<a class="btn-floating waves-effect waves-light grey" status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></a>
+			</div>
+			<h5 class='test-name'></h5>
+		</div>
+	</div>
+	<!-- subview right -->
+</div>
+<!-- test view --><div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Features
+					<div class='panel-lead'>3</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Scenarios
+					<div class='panel-lead'>37</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>124</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Apr 3, 2023 12:08:37 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Apr 3, 2023 12:09:17 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>00 00 39.885</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+		</div>
+		<!-- container -->
+		<script>
+			var statusGroup = {
+                parentCount: 3,
+				passParent: 3,
+				failParent: 0,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				childCount: 37,
+				passChild: 37,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				grandChildCount: 124,
+				passGrandChild: 124,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+			};
+			</script>
+		
+		<script>
+			var timeline = {
+			        "Launch ds-algo portal and navigate to home page":12.772,"To verify and validate Registration Page":14.813,"Verifying credentials for Sign in Page":5.089
+			};
+		</script>
+		
+		  <script src='http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/js/extent.js' type='text/javascript'></script>
+		
+		
+		<script type='text/javascript'>
+				
+		</script> 
+
+	</body>
+</html>

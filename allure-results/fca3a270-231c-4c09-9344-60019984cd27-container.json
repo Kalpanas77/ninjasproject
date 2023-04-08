@@ -1,0 +1,1 @@
+{"uuid":"fca3a270-231c-4c09-9344-60019984cd27","name":"Scenario Outline: User is on Home page and click getstarted link on  home page without sign in","children":["db43a46b-e8a5-4c96-be60-045caeff77ef"],"befores":[],"afters":[],"start":1679596870610,"stop":1679596870628}

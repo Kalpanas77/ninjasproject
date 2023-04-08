@@ -1,0 +1,1 @@
+{"uuid":"6de182ae-e211-4d32-b4dc-5582678a1fea","name":"Scenario Outline: The user is presented with error message for invalid credentials and successs message for Valid Credentials","children":["b9203cdc-d056-47e1-bb9d-04bdc90132bf"],"befores":[],"afters":[],"start":1680748313231,"stop":1680748313788}

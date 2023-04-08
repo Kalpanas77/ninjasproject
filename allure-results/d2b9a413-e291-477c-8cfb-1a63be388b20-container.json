@@ -1,0 +1,1 @@
+{"uuid":"d2b9a413-e291-477c-8cfb-1a63be388b20","name":"Scenario Outline: User is on Home page and click on dropdown without sign in","children":["adb846af-f513-4a72-a329-1d61d3214ecf"],"befores":[],"afters":[],"start":1679885595414,"stop":1679885595901}
